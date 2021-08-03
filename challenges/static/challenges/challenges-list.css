@@ -1,0 +1,7 @@
+div.month-list-container {
+width: 100%;
+}
+div.month-list-container > ul {
+   max-width: 40%;
+   margin: 32px auto; 
+}

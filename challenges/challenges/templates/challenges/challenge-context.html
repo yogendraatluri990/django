@@ -1,12 +1,25 @@
 {% extends "base_template.html" %}
+
+
+{% block css_files %}
+{% load static %}
+<link rel="stylesheet"
+ href="{% static "challenges/challenges-context.css" %}" />
+{% endblock%}
+
+
 {% block page_content %}
-
 {% include "challenges/includes/header.html" %}
-
-<h1>{{ current_title | title }}</h1>
+<div class="message-container">
+<div class="card border-primary mb-3">
+<h1 class="card-header">{{ current_title | title }}</h1>
+<div class="card-body">
 {% if current_context is not  None  %}
-<p>{{ current_context | title }} </p>
+<p class="card-text">{{ current_context | title }} </p>
 {% else%}
-<p>{{ current_context_not_available | title }} </p>
+<p class="card-text">{{ current_context_not_available | title }} </p>
 {% endif %}
+</div>
+</div>
+</div>
 {% endblock %}
