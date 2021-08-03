@@ -1,0 +1,12 @@
+{% extends "base_template.html" %}
+{% block page_content %}
+
+{% include "challenges/includes/header.html" %}
+
+<h1>{{ current_title | title }}</h1>
+{% if current_context is not  None  %}
+<p>{{ current_context | title }} </p>
+{% else%}
+<p>{{ current_context_not_available | title }} </p>
+{% endif %}
+{% endblock %}
