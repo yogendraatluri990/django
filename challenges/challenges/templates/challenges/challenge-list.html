@@ -16,7 +16,7 @@ Adding css files
 {% block page_content %}
 {% include "challenges/includes/header.html" %}
     <div class="month-list-container">
-      <ul class="nav nav-pills flex-column align-items-center flex-wrap">
+      <ul class="nav nav-pills flex-row align-items-center flex-wrap">
           {% for month in months %}
           <li class="nav-item  align-items-center flex-grow-1">
               <a href="{% url "monthly-challenge" month %}">{{ month|title }}</a>
