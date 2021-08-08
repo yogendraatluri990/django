@@ -1,0 +1,26 @@
+.page-container{
+ padding: 0 25px;
+ margin:32px auto;
+ display:flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+ align-items: center;
+ justify-content: center;
+ width: 100%;
+}
+.avatar-container, .profile-container {
+    min-height: 50px;
+    margin: 5px;
+}
+.avatar-container {
+    width: 25%;  
+}
+
+.profile-container {
+    width: 40%;   
+}
+
+.profile-container > .card-header, .card-text {
+    font-family: Ruda;
+    font-style: normal;
+}

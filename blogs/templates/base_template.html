@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{% block page_title %} Blog Posts {% endblock %}</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> {% load static %}
+    <link rel="stylesheet" href="{% static "quartz_bootstrap.min.css" %}" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong|Windsong|DancingScript|Caveat|Satisfy|Inconsolata|Cinzel|Alegreya|Orbitron|Changa|Ruda|Lemonada|Antonio|Rancho|GreatVibes|Sacramento" /> 
+    {% block page_css %}{% endblock page_css %}
+  </head>
+  <body> {% block page_content %} {% endblock page_content %}
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
