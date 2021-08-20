@@ -8,18 +8,20 @@
 {% endblock page_css %}
 
 {% block page_title %}
-<h1> {{page_title }} </h1>
+ {{page_title }}
 {% endblock %}
 
 {% block page_content %}
-{% include "posts/header/header-nav.html" %}
-<div class="page-container">
-<div class="avatar-container card mb-3">
-</div>
+<div>
 <div class="profile-container card mb-3">
-<h1 class="card-header">Blogger's Intro </h1>
+<div class="img-container">
+<img src="{% static 'posts/images/blog-writing.png'%}" alt="Unable to fetch the image" class="blogger-img"/>
+</div>
+<div class="text-container">
+<h1 class="card-header">{{ intro_card_title }}</h1>
 <div class="card-body">
 <h4 class="card-text">{{profile_content}} </h4>
+</div>
 </div>
 </div>
 </div>

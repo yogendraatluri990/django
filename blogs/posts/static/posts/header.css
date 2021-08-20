@@ -6,3 +6,11 @@
     font-size: xx-large;
     color: #080505 !important;
 }
+
+.anchor-tag{
+    cursor: pointer;
+}
+
+.bg-primary {
+    --bs-bg-opacity: 0.2;
+}

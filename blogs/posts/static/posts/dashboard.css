@@ -1,26 +1,28 @@
-.page-container{
+.profile-container{
  padding: 0 25px;
  margin:32px auto;
  display:flex;
  flex-direction: row;
  flex-wrap: wrap;
  align-items: center;
- justify-content: center;
- width: 100%;
-}
-.avatar-container, .profile-container {
-    min-height: 50px;
-    margin: 5px;
-}
-.avatar-container {
-    width: 25%;  
+ justify-content: flex-start;
+ width: 70%;
 }
 
-.profile-container {
-    width: 40%;   
-}
-
-.profile-container > .card-header, .card-text {
+.card-header, .card-text {
     font-family: Ruda;
     font-style: normal;
+}
+
+.img-container {
+    width: 20%;
+}
+.img-container > .blogger-img {   
+    width: 100%;
+    height: auto;
+}
+
+.text-container {
+ width: 75%;
+ margin: auto 25px;
 }
