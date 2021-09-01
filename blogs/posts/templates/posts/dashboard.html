@@ -6,23 +6,20 @@
 {% block page_css %}
  <link rel="stylesheet" href="{% static "posts/dashboard.css" %}" />  
 {% endblock page_css %}
-
 {% block page_title %}
- {{page_title }}
+ {{'profiles' }}
 {% endblock %}
 
 {% block page_content %}
-<div>
-<div class="profile-container card mb-3">
-<div class="img-container">
-<img src="{% static 'posts/images/blog-writing.png'%}" alt="Unable to fetch the image" class="blogger-img"/>
+<div class="page-container container">
+<div class="row">
+{% for post in  posts %}
+<a href={% url 'blog-detail-page' post.title %}>
+<div class="col-md">
+{% include 'posts/pages/post.page.html' %}
 </div>
-<div class="text-container">
-<h1 class="card-header">{{ intro_card_title }}</h1>
-<div class="card-body">
-<h4 class="card-text">{{profile_content}} </h4>
-</div>
-</div>
+</a> 
+{% endfor %}
 </div>
 </div>
 

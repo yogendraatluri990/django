@@ -1,0 +1,25 @@
+{% extends 'base_template.html' %}
+{% load static %}
+
+{% block page_css %}
+<link rel="stylesheet" href={% static 'posts/post-detail.css' %} />
+{% endblock page_css %}
+
+
+
+
+{% block page_content %}
+<div class="container post-detail-container">
+<div class="card border-success mb-3">
+<div class="card-header">{{post.intro_card_title|title }} </div>
+<div class="card-body">
+<h4 class="card-title"> Author: {{post.author}} </h4>
+<div> 
+<img src={% static 'posts/images/'|add:post.imageUrl %} alt="{{post.title}}" class="img" height="100" width="100"/>
+</div>
+<p class="card-text">{{post.post_content}}</p>
+
+</div>
+</div>
+</div>
+{% endblock page_content %}

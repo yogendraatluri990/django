@@ -1,28 +1,9 @@
-.profile-container{
- padding: 0 25px;
- margin:32px auto;
- display:flex;
- flex-direction: row;
- flex-wrap: wrap;
- align-items: center;
- justify-content: flex-start;
- width: 70%;
+.page-container {    
+    margin: 32px auto;
 }
 
-.card-header, .card-text {
-    font-family: Ruda;
-    font-style: normal;
+a {
+    text-decoration: none;
 }
 
-.img-container {
-    width: 20%;
-}
-.img-container > .blogger-img {   
-    width: 100%;
-    height: auto;
-}
 
-.text-container {
- width: 75%;
- margin: auto 25px;
-}

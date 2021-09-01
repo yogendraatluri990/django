@@ -1,11 +1,22 @@
 {% extends 'base_template.html' %}
+
 {% load static %}
 
+{% block page_css %} 
+<link rel="stylesheet" href={% static 'posts/post.css' %} /> 
+{% endblock page_css %} 
+
 {% block page_content %}
-<div class="all-posts-container">
-<h1>
-Welcome to All posts page
- </h1>
+<div class="container">
+<div class="row">
+{% for post in all_posts %}
+<div class="col-md post-columns">
+<a href={% url 'blog-detail-page' post.title %}>
+{% include 'posts/pages/post.page.html' %}
+</a>
 </div>
 
+{% endfor %}
+</div>
+</div>
 {% endblock page_content %}

@@ -1,0 +1,37 @@
+.profile-container {
+  padding: 5px;
+  margin: 32px auto;
+}
+
+.card-header {
+  text-transform: capitalize;
+}
+
+a {
+  text-decoration: none;
+}
+
+.card-header,
+.card-text {
+  font-family: Ruda;
+  font-style: normal;
+}
+
+.card-body {
+  height: 200px;
+}
+
+.text-container {
+  width: 75%;
+  margin: auto 25px;
+}
+
+.post-columns {
+  cursor: pointer;
+}
+
+.blogger-img,
+.card-text,
+.card-header {
+  cursor: pointer;
+}
